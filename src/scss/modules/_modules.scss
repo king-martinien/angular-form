@@ -1,0 +1,155 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.ali-center {
+  align-items: center;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.just-arround {
+  justify-content: space-around;
+}
+
+.just-between {
+  justify-content: space-between;
+}
+
+.rad-25 {
+  border-radius: 25px;
+}
+
+.clr-primary {
+  color: $clr-primary;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-light {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.btn {
+  height: 45px;
+  width: 135px;
+  color: $clr-white;
+
+  &-gradient {
+    background: $primary-gradient;
+  }
+}
+
+
+.form-content {
+  position: relative;
+  overflow: hidden;
+
+  .form-error {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 30px;
+    color: $clr-white;
+    background-color: $clr-crimson;
+    border-radius: 10px;
+    opacity: 0.8;
+    transform: translateY(100px);
+    transition: 0.4s ease;
+
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .form {
+    &-title {
+      margin-bottom: 35px;
+    }
+
+    .entries {
+      margin-bottom: 10px;
+      gap: 5px;
+
+      .entry {
+        width: 340px;
+        position: relative;
+        height: 50px;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 10px;
+        }
+
+        .icon-left {
+          position: absolute;
+          top: 50%;
+          left: 15px;
+          transform: translateY(-50%);
+          z-index: 0;
+          user-select: none;
+        }
+
+        input {
+          background: transparent;
+          padding-left: 40px;
+          position: relative;
+          z-index: 1;
+          height: 100%;
+          margin-bottom: 2px;
+        }
+
+        .see-password {
+          position: absolute;
+          right: 15px;
+          z-index: 2;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .error {
+          color: crimson;
+          font-size: 12px;
+          padding-left: 15px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .block {
+      margin-bottom: 25px;
+      padding: 0 8px;
+
+      .entry {
+        label {
+          gap: 3px;
+        }
+      }
+    }
+  }
+}

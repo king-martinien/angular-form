@@ -1,0 +1,27 @@
+<div class="new-course">
+  <div class="container">
+    <h1>New Course Component</h1>
+
+    <div class="content">
+      <form [formGroup]="form">
+        <input
+          type="text"
+          placeholder="Add topic"
+          (keyup.enter)="addTopic(topic)"
+          class="rad-25"
+          #topic
+        />
+      </form>
+
+      <ul class="topics">
+        <li
+          class="topic-item"
+          *ngFor="let topic of topics.controls"
+          (click)="removeTopic(topic)"
+        >
+          {{ topic.value }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

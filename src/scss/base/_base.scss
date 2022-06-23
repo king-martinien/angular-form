@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background: $clr-primary;
+  color: $clr-white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  color: $clr-dark;
+  font-family: Poppins, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input:not([type="checkbox"]) {
+  width: 100%;
+  min-height: 50px;
+  padding-left: 25px;
+  border: 2px solid $clr-primary;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+
+  &::placeholder {
+    font-family: inherit;
+    color: gray;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $clr-primary-light;
+  }
+}

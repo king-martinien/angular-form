@@ -1,0 +1,18 @@
+@import "src/scss/variables/variables";
+
+.signin {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  height: 100vh;
+
+  h2 {
+    font-size: 36px;
+    color: $clr-white;
+  }
+
+  .img {
+    background: $clr-primary;
+  }
+
+  
+}

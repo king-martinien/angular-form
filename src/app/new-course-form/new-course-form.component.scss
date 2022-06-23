@@ -1,0 +1,39 @@
+@import "../../scss/variables/variables";
+
+.new-course {
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px 0;
+
+  .container {
+    padding: 20px 0;
+
+    h1 {
+      margin-bottom: 25px;
+    }
+
+    .content {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    form {
+      margin-bottom: 15px;
+    }
+
+    .topics {
+      padding: 10px;
+    //   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .topic-item {
+        border: 2px solid $clr-primary;
+        padding: 10px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
